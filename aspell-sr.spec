@@ -9,7 +9,7 @@
 Summary:       %{languageenglazy} files for aspell
 Name:          aspell-%{languagecode}
 Version:       0.60.0
-Release:       %mkrel 6
+Release:       %mkrel 5
 Group:         System/Internationalization
 Source:	       http://ftp.gnu.org/gnu/aspell/dict/%{languagecode}/aspell6-%{languagecode}-%{src_ver}.tar.bz2
 URL:		   http://aspell.net/
@@ -57,4 +57,39 @@ rm -fr $RPM_BUILD_ROOT
 %doc README* Copyright 
 %{_libdir}/aspell-*/*
 
+
+
+
+%changelog
+* Tue Sep 01 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.60.0-5mdv2010.0
++ Revision: 423966
+- rebuild
+
+* Thu Jun 19 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.60.0-4mdv2009.0
++ Revision: 226181
+- rebuild
+
+* Sun Mar 09 2008 Anssi Hannula <anssi@mandriva.org> 0.60.0-3mdv2008.1
++ Revision: 182654
+- provide enchant-dictionary
+
+* Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 0.60.0-2mdv2008.1
++ Revision: 140690
+- restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+    - s/Mandrake/Mandriva/
+
+
+* Mon Mar 05 2007 Oden Eriksson <oeriksson@mandriva.com> 0.60.0-2mdv2007.0
++ Revision: 132949
+- Import aspell-sr
+
+* Mon Mar 05 2007 Oden Eriksson <oeriksson@mandriva.com> 0.60.0-2mdv2007.1
+- use the mkrel macro
+- disable debug packages
+
+* Mon Nov 28 2005 Thierry Vignaud <tvignaud@mandriva.com> 0.60.0-1mdk
+- first version
 
