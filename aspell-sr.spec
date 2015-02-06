@@ -9,7 +9,7 @@
 Summary:       %{languageenglazy} files for aspell
 Name:          aspell-%{languagecode}
 Version:       0.60.0
-Release:       %mkrel 5
+Release:       6
 Group:         System/Internationalization
 Source:	       http://ftp.gnu.org/gnu/aspell/dict/%{languagecode}/aspell6-%{languagecode}-%{src_ver}.tar.bz2
 URL:		   http://aspell.net/
