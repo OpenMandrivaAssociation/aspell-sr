@@ -17,6 +17,10 @@ License:	   LGPL
 BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 Provides: spell-%{languagecode}
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires: aspell >= 0.50
 BuildRequires: make
 Requires:      aspell >= 0.50
